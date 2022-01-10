@@ -5,11 +5,12 @@ const Posts = ({ posts, loading }) => {
         return <h2>Loading...</h2>;
     }
     return (
-        <ul className="mb-4 list-inside">
+        <ul
+            className="mb-4 grid  md:grid-cols-3 lg:grid-cols-4 lg:mt-4
+            lg:mb-4 sm:grid-cols-1"
+        >
             {posts.map((post) => (
-                <li key={post.id} className="list-item">
-                    {post.title}
-                </li>
+                <li key={post.id}>{post.title}</li>
             ))}
         </ul>
     );
