@@ -1,5 +1,6 @@
 import Head from "next/head";
 import tw, { styled } from "twin.macro";
+import Link from "next/link";
 import { useSelector, useDispatch } from "react-redux";
 import {
     decrement,
@@ -30,6 +31,11 @@ export default function Home() {
                 <AiOutlineMenu size="30px" onClick={toggleOpen} />
             </div>
             <main className="flex flex-col items-center justify-center w-full h-full flex-1 px-4 text-center">
+                <Link href="/about">
+                    <h1 className="text-3xl cursor-pointer text-red-400 font-bold">
+                        Go To About Page
+                    </h1>
+                </Link>
                 <div className="flex items-center justify-center ">
                     <StyledHeader>
                         Hello from the styled tailwind component
