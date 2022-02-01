@@ -16,7 +16,7 @@ const FloatMenuWrapper = styled.div`
         opacity-90
         backdrop-brightness-150	
         w-[250px]
-        z-20
+        z-30
         rounded
     `};
 `;

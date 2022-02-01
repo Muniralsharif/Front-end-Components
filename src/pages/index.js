@@ -12,6 +12,7 @@ import FloatMenu from "../components/common/floatMenu";
 import { useState } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
 import Slider from "../components/common/slider/slider";
+import NavBar from "../components/common/navbar/nav";
 export default function Home() {
     const mount = 5;
     const count = useSelector((state) => state.counter.value);
@@ -27,7 +28,8 @@ export default function Home() {
                 <title>Home</title>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <div className="cursor-pointer absolute top-3 right-5">
+            <NavBar />
+            <div className="cursor-pointer sm:hidden absolute top-3 right-5">
                 <AiOutlineMenu size="30px" onClick={toggleOpen} />
             </div>
             <main className="flex flex-col items-center justify-center w-full h-full flex-1 px-4 text-center">
